@@ -1,0 +1,68 @@
+{
+  "name": "Pedro Ximenez",
+  "age": 32,
+  "sex": "H",
+  "height": "1,82",
+  "hair": "Castaño",
+  "eyes": "Marrones",
+  "skills": ["Teatro, TV y Publicidad","Mímica"],
+  "languages": ["Inglés","Español"],
+  "activated": false,
+  "awards": {
+    "show": true,
+    "experiences": [
+      {
+        "date": "1999",
+        "experience": "Best X from Y"
+      }
+    ]
+  },
+  "formation": {
+    "show": true,
+    "experiences": [
+      {
+        "date": "1998",
+        "experience": "Curso de interpretación de tres años de duración en la escuela de arte dramático Cuarta Pared."
+      },
+      {
+        "date": "2003",
+        "experience": "Curso de entrenamiento en la escuela Juan Carlos Corazza"
+      }
+    ]
+  },
+  "background": {
+    "show": true,
+    "teatro" : [
+      {
+        "date": "2008",
+        "experience": "Sin fin ni final, performance dirigida por María Rodríguez Alma (RaMMa). Pieza incluida en el Festival «Divertimento»"
+      },
+      {
+        "date": "2007",
+        "experience":"Grita sida. Monólogo dirigido por Adolfo Simón llevado a cabo en la céntrica calle madrileña de Gran Vía en el día internacional contra el sida"
+      },
+      {
+        "date": "1999",
+        "experience": "Orbita 05. Proyecto de acciones telecompartidas conjuntamente en tiempo real mediante webcam entre España, Suecia y Chile"
+      }
+    ],
+    "cine" : [
+      {
+        "date": "2020",
+        "experience": "Figuraciones especiales para la serie Camera Café"
+      }
+    ]
+  },
+  "photos": {
+    "main": "photo1.jpg",
+    "files": ["photo1.jpg","photo2.png"]
+  },
+  "videos": [{
+    "url": "https://carruseldeactores.com/portfolio/rafael-ortega/",
+    "platform": "youtube"
+  }],
+  "media": [{
+    "user": "@rafael_ortega",
+    "platform": "twitter"
+  }]
+}
