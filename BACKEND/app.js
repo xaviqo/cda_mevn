@@ -12,7 +12,7 @@ const app = express();
 }))*/
 
 app.use(cors({
-    origin: 'http://130.162.47.190/'
+    origin: 'http://130.162.47.190'
 }))
 
 /*app.use(function (req,res,next) {

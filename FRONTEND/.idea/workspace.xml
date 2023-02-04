@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2075c024-dfc1-4c1a-87ae-e0883ac90842" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../BACKEND/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKEND/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BACKEND/controller/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKEND/controller/controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BACKEND/service/login.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKEND/service/login.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../cda2_be/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../cda2_be/.idea/cda2_be.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../cda2_be/.idea/modules.xml" beforeDir="false" />
@@ -116,7 +111,7 @@
       <workItem from="1675191613720" duration="149000" />
       <workItem from="1675280365850" duration="5558000" />
       <workItem from="1675445196544" duration="8913000" />
-      <workItem from="1675509387865" duration="838000" />
+      <workItem from="1675509387865" duration="1157000" />
     </task>
     <servers />
   </component>
