@@ -27,12 +27,13 @@ loginService.logIn = async (req,res) => {
     }
 }
 
-loginService.createAdmin = async (req,res) => {
+loginService.createAdmin = async (input) => {
+    const { usr, pwd } = input;
     const admin = new Admin({
-        user: req.body.user,
-        password: await encryptPassword(req.body.password)
+        user: usr,
+        password: await encryptPassword(pwd)
     });
-    res.json(await admin.save());
+    await admin.save();
 }
 
 encryptPassword = async (pwd) => {
