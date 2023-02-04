@@ -12,7 +12,7 @@ Vue.use(vueYoutubeEmbed);
 
 Vue.config.productionTip = false
 
-axios.defaults.baseURL = 'http://localhost:3000/api';
+axios.defaults.baseURL = 'http://130.162.47.190:3000/api';
 const CDA_SESSION = 'cda_session';
 axios.interceptors.request.use(
     async config => {
