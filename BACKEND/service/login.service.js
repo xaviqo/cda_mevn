@@ -27,13 +27,13 @@ loginService.logIn = async (req,res) => {
     }
 }
 
-/*loginService.createAdmin = async (req,res) => {
+loginService.createAdmin = async (req,res) => {
     const admin = new Admin({
         user: req.body.user,
         password: await encryptPassword(req.body.password)
     });
     res.json(await admin.save());
-};*/
+}
 
 encryptPassword = async (pwd) => {
     const salt = await bcrypt.genSalt(10);

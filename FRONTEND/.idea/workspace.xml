@@ -5,31 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2075c024-dfc1-4c1a-87ae-e0883ac90842" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../BACKEND/public/uploads/63dd830d8f63d46ae861c4b4_104213.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BACKEND/public/uploads/63dd830d8f63d46ae861c4b4_410304.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BACKEND/public/uploads/63dd830d8f63d46ae861c4b4_869214.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BACKEND/public/uploads/63dd830d8f63d46ae861c4b4_988868.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/css/app.09b63c00.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/css/chunk-vendors.b3174aa6.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/app.f01212bc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/app.f01212bc.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/chunk-vendors.87c05f75.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/chunk-vendors.87c05f75.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BACKEND/service/actor.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKEND/service/actor.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BACKEND/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKEND/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BACKEND/controller/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKEND/controller/controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BACKEND/service/login.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKEND/service/login.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mixins.js" beforeDir="false" afterPath="$PROJECT_DIR$/mixins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ActorGallery.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ActorGallery.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/ActorEditBackground.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/ActorEditBackground.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/PhotoUploadEdition.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/PhotoUploadEdition.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../cda2_be/src/app/components/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../cda2_be/src/app/components/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../cda2_be/src/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../cda2_be/src/app/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../cda2_be/src/models/Actor.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../cda2_be/src/models/Actor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../cda2_be/src/routes/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../cda2_be/src/routes/controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cda2_be/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cda2_be/.idea/cda2_be.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cda2_be/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cda2_be/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cda2_be/src/app/components/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cda2_be/src/app/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cda2_be/src/models/Actor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cda2_be/src/routes/controller.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/configuration/spamfilter/SpamFilterDefaultCfg.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/configuration/spamfilter/SpamFilterDefaultCfg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/controller/websocket/MessageWsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/controller/websocket/MessageWsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/dto/WsMessageDto.java" beforeDir="false" />
@@ -57,7 +45,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -127,7 +115,8 @@
       <workItem from="1675104821960" duration="4638000" />
       <workItem from="1675191613720" duration="149000" />
       <workItem from="1675280365850" duration="5558000" />
-      <workItem from="1675445196544" duration="8147000" />
+      <workItem from="1675445196544" duration="8913000" />
+      <workItem from="1675509387865" duration="838000" />
     </task>
     <servers />
   </component>

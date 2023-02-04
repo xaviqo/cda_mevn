@@ -11,7 +11,7 @@ router.post('/admin/login', loginService.logIn);
 router.get('/admin/check',verifyToken,(req,res) =>
     res.status(200).json({admin:true})
 );
-//router.post('/create-admin', loginService.createAdmin);
+router.post('/create-admin', loginService.createAdmin);
 
 
 router.get('/gallery', actorService.gallery);
