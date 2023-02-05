@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2075c024-dfc1-4c1a-87ae-e0883ac90842" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../BACKEND/public/uploads/63dea2ec4f61729891b2a500_266171.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BACKEND/public/uploads/63deab9bdb81e971faf5f245_331470.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BACKEND/public/uploads/63deab9bdb81e971faf5f245_341130.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BACKEND/public/uploads/63deab9bdb81e971faf5f245_350290.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BACKEND/public/uploads/63deab9bdb81e971faf5f245_360833.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioButtonsBar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/BackgroundTabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/ActorProfile.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../PEVN-CDA" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BACKEND/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKEND/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BACKEND/controller/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKEND/controller/controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BACKEND/models/Actor.js" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKEND/models/Actor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BACKEND/service/actor.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKEND/service/actor.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mixins.js" beforeDir="false" afterPath="$PROJECT_DIR$/mixins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ActorGallery.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ActorGallery.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/ActorEditBackground.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/ActorEditBackground.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/portfolio/PortfolioButtonsBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioButtonsBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/ActorProfile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ActorProfile.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../cda2_be/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../cda2_be/.idea/cda2_be.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../cda2_be/.idea/modules.xml" beforeDir="false" />
@@ -130,7 +116,7 @@
       <workItem from="1675280365850" duration="5558000" />
       <workItem from="1675445196544" duration="8913000" />
       <workItem from="1675509387865" duration="2053000" />
-      <workItem from="1675517964598" duration="18350000" />
+      <workItem from="1675517964598" duration="22999000" />
     </task>
     <servers />
   </component>

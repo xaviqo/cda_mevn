@@ -3,6 +3,8 @@
     <PortfolioButtonsBar
         :background=actor.background
         :actor-name=actor.name
+        :photos=actor.photos
+        :videos=actor.videos
     />
   </div>
 </template>
@@ -16,13 +18,15 @@ export default {
   components: {PortfolioButtonsBar},
   data: () => ({
     urlProfile: '',
-    actor: null,
+    tabsArray: [],
+    actor: {
+      actorName: '',
+      background: {}
+    },
     tab: null
   }),
   created() {
     this.urlProfile = this.$route.params.name;
-    //this.$route.params.section;
-    console.log(this.$route.params.section);
     this.retrieveFullProfile();
   },
   methods: {
@@ -35,6 +39,7 @@ export default {
               this.actor.background[bg]['bgName'] = BackgroundTabs[bg];
               this.actor.background[bg]['bgUrl'] = BackgroundTabs[bg].replace(/\s/g, '-').toLowerCase();
             }
+            this.currentTab(this.$route.params.section);
           })
           .catch( e => {
             EventBus.$emit('alert',{
@@ -45,6 +50,18 @@ export default {
             this.$router.push(`/`);
           });
     },
+    currentTab(urlSection){
+      console.log("url section "+urlSection)
+      for (const [key, bg] of Object.entries(this.actor.background)) {
+        if (bg.active) this.tabsArray.push(bg.bgUrl);
+      }
+      if (this.actor.photos.length > 0) this.tabsArray.push('fotografias');
+      if (this.actor.videos.length > 0) this.tabsArray.push('videos');
+      if (urlSection !== undefined){
+        const tabIndex = this.tabsArray.indexOf(urlSection.toLowerCase());
+        EventBus.$emit('toButtonsBar_actorProfile',parseInt(tabIndex+1));
+      }
+    }
   }
 }
 </script>

@@ -18,8 +18,6 @@
       </v-col>
       <v-tabs
           v-model="tab"
-          background-color="transparent"
-          color="basil"
           fixed-tabs
       >
         <v-tab
@@ -28,38 +26,56 @@
           Datos Personales
         </v-tab>
         <v-tab
-            v-model="selectedTab"
-            v-for="item in background"
-            :key="item.bgUrl"
+            v-for="(item,i) in background"
+            :key="i"
             v-if="item.active"
             @click=goTo(item.bgUrl)
+            fixed-tabs
         >
           {{ item.bgName }}
+        </v-tab>
+        <v-tab
+            v-if="photos.length > 0"
+        >
+          Fotografías
+        </v-tab>
+        <v-tab
+            v-if="videos.length > 0"
+        >
+          Videos
         </v-tab>
       </v-tabs>
     </v-app-bar>
 </template>
 
 <script>
+import {EventBus} from "@/main";
+
 export default {
   name: "PortfolioButtonsBar",
   data: () => ({
-    tab: ''
+    tab: null,
   }),
-  created() {
-    //this.tab = this.selectedTab;
+  mounted() {
+    EventBus.$on('toButtonsBar_actorProfile', tabIndex => {
+      setTimeout( () => {
+        this.tab = (tabIndex)
+        console.log(tabIndex);
+      },1)
+    });
   },
   props: {
     actorName: {
-      type: String,
       required: true
     },
     background: {
-      type: String,
       required: true
     },
-    selectedTab: {
-      type: String
+    photos: {
+      required: true
+    },
+    videos: {
+      required: true
     }
   },
   methods:{
