@@ -12,7 +12,9 @@
         <v-card
             outlined
             class="pa-1"
-            max-width="315px">
+            max-width="315px"
+            @click=profileIfNotAdmin(a.name)
+        >
             <v-img
                 :key=a.photo.publicId
                 :src=a.photo.secureUrl
@@ -85,6 +87,9 @@ export default {
         return actor.active;
       }
       return true;
+    },
+    profileIfNotAdmin(actorName){
+      if (!this.admin) this.$router.push(`/portfolio/${actorName.replace(/\s/g, '-').toLowerCase()}`);
     }
   }
 }

@@ -14,7 +14,7 @@ export const mixins = {
             return JSON.parse(localStorage.getItem(CDA_SESSION))['token'];
         },
         addFaceDetection(url) {
-            return url.replace('image/upload/', 'image/upload/c_thumb,g_face,w_650/');
+            return url.replace('image/upload/', 'image/upload/c_fill,c_thumb,g_face,w_650,h_650/');
         }
     },
 }

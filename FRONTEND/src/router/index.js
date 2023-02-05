@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AdminLogin from "@/views/AdminLogin.vue";
 import AdminPanel from "@/views/AdminPanel.vue";
+import ActorProfile from "@/views/ActorProfile.vue";
 
 Vue.use(VueRouter)
 
@@ -11,6 +12,11 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/portfolio/:name/:section?',
+    name: 'profile',
+    component: ActorProfile
   },
   {
     path: '/cda-admin',

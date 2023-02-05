@@ -41,7 +41,7 @@ actorService.create = async (req, res) => {
 }
 
 actorService.update = async (req,res) => {
-    //console.log(req.body);
+    console.log(req.body);
     try {
         await Actor.updateOne(
             { _id : req.params.id },
@@ -132,6 +132,31 @@ actorService.retrieveExperiences = async (req,res) => {
         res.status(500).json({
             code: 500,
             message: `No se ha podido recuperar la experiencia del perfil`,
+            dateTime: new Date()
+        });
+    }
+}
+
+actorService.retrieveFullProfile = async (req,res) => {
+    try {
+        const actor = await Actor.findOne({
+            name: { $regex: new RegExp(req.params.name.replace(/-/g, ' '), "i") },
+            active: true
+        });
+
+        if (actor === null){
+            res.status(404).json({
+                code: 404,
+                message: `El portfolio indicado no existe o no está activo`,
+                dateTime: new Date()
+            });
+        } else {
+            res.status(200).json(actor);
+        }
+    } catch (error) {
+        res.status(500).json({
+            code: 500,
+            message: `Ha ocurrido un error recuperando el perfil indicado`,
             dateTime: new Date()
         });
     }

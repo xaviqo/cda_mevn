@@ -27,5 +27,5 @@ router.get('/profile/retrieve/:id',verifyToken,actorService.retrieveProfile);
 router.get('/social/retrieve/:id',verifyToken,actorService.retrieveSocial);
 router.get('/images/retrieve/:id',verifyToken, actorService.retrieveImages);
 router.get('/videos/retrieve/:id',verifyToken, actorService.retrieveVideos);
-
+router.get('/full-profile/retrieve/:name',actorService.retrieveFullProfile);
 module.exports = router;

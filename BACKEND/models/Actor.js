@@ -16,6 +16,7 @@ const Actor = new Schema({
                 type: Boolean,
                 default: false
             },
+            categories: [],
             values: []
         },
         formation: {
@@ -23,6 +24,7 @@ const Actor = new Schema({
                 type: Boolean,
                 default: false
             },
+            categories: [],
             values: []
         },
         experience: {
@@ -30,6 +32,7 @@ const Actor = new Schema({
                 type: Boolean,
                 default: false
             },
+            categories: [],
             values: []
         },
     },

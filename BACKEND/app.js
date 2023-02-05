@@ -9,20 +9,15 @@ require('dotenv').config();
 const app = express();
 const loginService = require('./service/login.service');
 
-/*app.use(cors({
+app.use(cors({
     origin: 'http://localhost:1337'
-}))*/
+}))
 
+/*
 app.use(cors({
     origin: 'http://130.162.47.190'
 }))
-
-/*app.use(function (req,res,next) {
-    res.header("Access-Control-Allow-Origins","http://localhost:1337");
-    res.header("Access-Control-Allow-Methods","GET,HEAD,OPTIONS,POST,PUT,DELETE");
-    res.header("Access-Control-Allow-Headers","auth-token, Origin, X-Requested-With, Content-Type, Accept");
-    next();
-});*/
+*/
 
 // Settings
 app.use(bodyParser.json());
@@ -34,15 +29,15 @@ mongoose.connect(process.env.MONGODB_URI)
 ControllerRoute = require('./controller/controller');
 app.use('/api', ControllerRoute);
 
-const adminUsr = crypto.randomBytes(4).toString('hex');
+/*const adminUsr = crypto.randomBytes(4).toString('hex');
 const adminPwd = crypto.randomBytes(4).toString('hex');
 console.log("[CDA] Admin user: "+adminUsr);
 console.log("[CDA] Admin password: "+adminPwd);
-
 loginService.createAdmin({
     usr: adminUsr,
     pwd: adminPwd
 });
+*/
 
 app.listen(process.env.CDA_PORT, () => {
     console.log("[CDA] API listening port: "+process.env.CDA_PORT);

@@ -48,18 +48,37 @@
         </v-tabs>
       </v-list>
       <v-divider></v-divider>
+      <v-list>
+        <v-row class="pr-12 pl-9 pt-3">
+          <v-combobox
+              prepend-icon="mdi-shape-outline"
+              label="Añadir categoría"
+              v-model=backgrounds[activeTab].categories
+              multiple
+              chips
+          ></v-combobox>
+        </v-row>
+      </v-list>
       <v-list
           subheader
       >
         <v-row class="px-6">
-          <v-col cols="5">
+          <v-col cols="3">
+            <v-select
+                prepend-icon="mdi-shape-outline"
+                label="Categoría"
+                v-model=newBg.category
+                :items=backgrounds[activeTab].categories
+            ></v-select>
+          </v-col>
+          <v-col cols="3">
             <v-text-field
                 prepend-icon="mdi-calendar-range"
                 :label=labels.date
                 v-model=newBg.date
             ></v-text-field>
           </v-col>
-          <v-col cols="6">
+          <v-col cols="5">
             <v-text-field
                 prepend-icon="mdi-information-outline"
                 :label=labels.exp
@@ -83,10 +102,17 @@
         </v-row>
       </v-list>
       <v-list v-if="backgrounds[activeTab].values.length > 0">
+        <template
+            v-for="category in backgrounds[activeTab].categories"
+        >
+          <v-subheader>{{ category.toUpperCase() }}</v-subheader>
         <v-divider></v-divider>
+        <template
+            v-for="(val,i) in backgrounds[activeTab].values"
+        >
           <v-list-item
-          v-for="(val,i) in backgrounds[activeTab].values"
-          :key="val.exp"
+              v-if="val.category === category"
+              :key="val.exp"
           >
             <v-list-item-icon>
               <v-icon class="ml-4 mt-1">{{ backgrounds[activeTab].icon }}</v-icon>
@@ -109,6 +135,8 @@
               </v-btn>
             </v-list-item-action>
           </v-list-item>
+          </template>
+        </template>
       </v-list>
     </v-col>
   </v-row>
@@ -123,7 +151,8 @@ export default {
     activeTab: 0,
     newBg: {
       date: '',
-      exp: ''
+      exp: '',
+      category: ''
     },
     labels:{
       date: '',
@@ -135,6 +164,7 @@ export default {
         name: 'Formación',
         icon: 'mdi-school',
         active: false,
+        categories: [],
         values: []
       },
       {
@@ -142,6 +172,7 @@ export default {
         name: 'Experiencia Profesional',
         icon: 'mdi-movie-open',
         active: false,
+        categories: [],
         values: []
       },
       {
@@ -149,6 +180,7 @@ export default {
         name: 'Premios',
         icon: 'mdi-trophy-award',
         active: false,
+        categories: [],
         values: []
       },
     ]
@@ -174,6 +206,7 @@ export default {
         if (bg.values.length > 0){
           actor.background[bg.schemaName] = {
             values: bg.values,
+            categories: bg.categories,
             active: bg.active
           };
         }
@@ -215,6 +248,7 @@ export default {
             this.backgrounds.forEach( bg => {
               bg.active = res.data.background[bg.schemaName].active;
               bg.values = res.data.background[bg.schemaName].values;
+              bg.categories = res.data.background[bg.schemaName].categories;
             });
           })
           .catch( e => {
