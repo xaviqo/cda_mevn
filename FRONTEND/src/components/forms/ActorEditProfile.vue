@@ -14,6 +14,7 @@
         <v-list-item
             v-for="input in profile"
             :key=input.text
+            v-if="input.type"
         >
             <v-text-field
                 v-if="input.type === 'text'"
@@ -38,9 +39,31 @@
                 :chips=input.chips
                 :multiple=input.multiple
             ></v-select>
-
         </v-list-item>
       </v-list>
+      <template v-if="languagesSkill.length > 0">
+        <v-list>
+          <v-subheader>
+            <v-icon class="mr-4">mdi-translate-variant</v-icon>
+            Configurar Idiomas
+          </v-subheader>
+        </v-list>
+        <v-divider></v-divider>
+        <v-list>
+          <v-list-item
+              v-for="lang in languagesSkill"
+          >
+            <v-progress-linear
+                rounded
+                v-model="lang.percent"
+                color="blue-grey"
+                height="25"
+            >
+              <strong>{{ lang.lang }}: {{ Math.ceil(lang.percent).toFixed(0) }}%</strong>
+            </v-progress-linear>
+          </v-list-item>
+        </v-list>
+      </template>
     </v-col>
   </v-row>
 </template>
@@ -61,6 +84,11 @@ export default {
       handler: function () {
         this.retrieveProfileInfo();
       }
+    },
+    'profile.languages.value': {
+      handler: function (langs){
+        this.checkLangSkills(langs);
+      }
     }
   },
   created() {
@@ -70,12 +98,36 @@ export default {
     );
   },
   methods: {
+    checkLangSkills(langs){
+      this.languagesSkill = this.languagesSkill.filter( lang => {
+        langs.includes(lang.lang)
+      });
+      langs.forEach( lang => {
+        const index = this.languagesSkill.findIndex( ls => {
+          ls.lang == lang
+        });
+        if (index === -1){
+          this.languagesSkill.push({
+            lang: lang,
+            percent: 0
+          });
+        }
+      });
+    },
     save(){
       const actor = {};
 
+      this.languagesSkill.forEach( ln => {
+          ln.percent = Math.ceil(ln.percent).toFixed(0);
+      });
+
       for (let profileKey in this.profile) {
         if (this.profile[profileKey].value != null){
-          actor[profileKey] = this.profile[profileKey].value;
+          if (profileKey !== 'languages'){
+            actor[profileKey] = this.profile[profileKey].value;
+          } else {
+            actor[profileKey] = this.languagesSkill;
+          }
         }
       }
 
@@ -94,8 +146,16 @@ export default {
       this.axios
           .get(`/profile/retrieve/${this.actorId}`)
           .then( res => {
-            for (let key in this.profile) {
-              this.profile[key].value = res.data[key];
+            for (let profileKey in this.profile) {
+              if (profileKey != 'languages'){
+                this.profile[profileKey].value = res.data[profileKey];
+              } else {
+                res.data.languages.forEach( lang => {
+                  this.profile.languages.value.push(lang.lang);
+                });
+                this.languagesSkill = res.data.languages;
+                console.log(this.languagesSkill)
+              }
             }
           })
           .catch( e => {
@@ -143,7 +203,7 @@ export default {
         label: "Idiomas",
         icon: "mdi-account-voice",
         type: "combobox",
-        value: null
+        value: []
       },
       skills: {
         label: "Habilidades",
@@ -152,15 +212,16 @@ export default {
         value: null
       },
       sex: {
-        label: "Sexo (Se utilizará para filtrar en página principal)",
+        label: "Sexo",
         icon: "mdi-human",
         type: "select",
         chips: false,
         multiple: false,
         items: ['Hombre','Mujer','Otros','Sin indicar'],
         value: null
-      }
-    }
+      },
+    },
+    languagesSkill: []
   })
 }
 </script>

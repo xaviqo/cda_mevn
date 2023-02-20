@@ -19,6 +19,7 @@
       <v-tabs
           v-model="tab"
           fixed-tabs
+          color="grey darken-2"
       >
         <v-tab
             @click=goTo(actorName)
@@ -26,23 +27,12 @@
           Datos Personales
         </v-tab>
         <v-tab
-            v-for="(item,i) in background"
+            v-for="(item,i) in tabsArray"
             :key="i"
-            v-if="item.active"
             @click=goTo(item.bgUrl)
             fixed-tabs
         >
           {{ item.bgName }}
-        </v-tab>
-        <v-tab
-            v-if="photos.length > 0"
-        >
-          Fotografías
-        </v-tab>
-        <v-tab
-            v-if="videos.length > 0"
-        >
-          Videos
         </v-tab>
       </v-tabs>
     </v-app-bar>
@@ -58,32 +48,26 @@ export default {
   }),
   mounted() {
     EventBus.$on('toButtonsBar_actorProfile', tabIndex => {
-      setTimeout( () => {
         this.tab = (tabIndex)
-        console.log(tabIndex);
-      },1)
     });
   },
   props: {
     actorName: {
       required: true
     },
-    background: {
-      required: true
-    },
-    photos: {
-      required: true
-    },
-    videos: {
+    tabsArray: {
       required: true
     }
   },
   methods:{
     goTo(section){
+      let newPath = '';
       if (section === this.actorName)
-        this.$router.push(`/portfolio/${this.actorName.replace(/\s/g, '-').toLowerCase()}`);
+        newPath = `/portfolio/${this.actorName.replace(/\s/g, '-').toLowerCase()}`;
       else
-        this.$router.push(`/portfolio/${this.actorName.replace(/\s/g, '-').toLowerCase()}/${section}`);
+        newPath = `/portfolio/${this.actorName.replace(/\s/g, '-').toLowerCase()}/${section}`;
+
+      if (this.$route.path !== newPath) this.$router.push(newPath);
     }
   }
 }

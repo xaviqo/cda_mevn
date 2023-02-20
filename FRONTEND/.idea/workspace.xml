@@ -5,30 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2075c024-dfc1-4c1a-87ae-e0883ac90842" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../PEVN-CDA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BACKEND/public/uploads/63df91a1159f1a8a679e0992_575149.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BACKEND/public/uploads/63f0e081780399720fa637b9_857293.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BACKEND/public/uploads/63f0e081780399720fa637b9_880456.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioLanguages.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioMainImg.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioPersonalData.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioSkills.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/PersonalData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/ActorEditBackground.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/ActorEditBackground.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/ActorEditProfile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/ActorEditProfile.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/portfolio/PortfolioButtonsBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioButtonsBar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/ActorProfile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ActorProfile.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../cda2_be/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../cda2_be/.idea/cda2_be.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../cda2_be/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../cda2_be/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../cda2_be/src/app/components/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../cda2_be/src/app/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../cda2_be/src/models/Actor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../cda2_be/src/routes/controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/configuration/spamfilter/SpamFilterDefaultCfg.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/configuration/spamfilter/SpamFilterDefaultCfg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/controller/websocket/MessageWsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/controller/websocket/MessageWsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/dto/WsMessageDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/model/WsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/model/WsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/model/WsPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/model/WsPayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/model/WsSpamType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/model/WsSpamType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/service/CommonRoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/service/CommonRoomService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/service/SpamFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/service/SpamFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/service/WsConnectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/service/WsConnectionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/service/WsSpamFilterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/java/tech/xavi/wschatspringvue/service/WsSpamFilterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/resources/spamfilter.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChatSpringVue/Back/src/main/resources/spamfilter.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/AdminPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AdminPanel.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -116,7 +106,21 @@
       <workItem from="1675280365850" duration="5558000" />
       <workItem from="1675445196544" duration="8913000" />
       <workItem from="1675509387865" duration="2053000" />
-      <workItem from="1675517964598" duration="22999000" />
+      <workItem from="1675517964598" duration="36900000" />
+      <workItem from="1675668352346" duration="9000" />
+      <workItem from="1675694654949" duration="24000" />
+      <workItem from="1675695976228" duration="6000" />
+      <workItem from="1675696825360" duration="5000" />
+      <workItem from="1676407706397" duration="11000" />
+      <workItem from="1676488432016" duration="46000" />
+      <workItem from="1676726502272" duration="1889000" />
+      <workItem from="1676741678434" duration="628000" />
+      <workItem from="1676743711716" duration="9000" />
+      <workItem from="1676755348955" duration="40000" />
+      <workItem from="1676755407142" duration="2447000" />
+      <workItem from="1676790358389" duration="1381000" />
+      <workItem from="1676835858796" duration="118000" />
+      <workItem from="1676835988312" duration="4344000" />
     </task>
     <servers />
   </component>

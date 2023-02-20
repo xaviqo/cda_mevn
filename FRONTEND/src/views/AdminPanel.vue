@@ -22,6 +22,11 @@
   Imagenes - Videos (Multimedia)
   Exp Profesional - Formacion - Premios (Experiencia)
 -->
+<!--
+  EXTRA:
+  DESCARGAR TODAS LAS FOTOS
+  CAMBIAR RRSS
+-->
 <script>
 import {EventBus} from "@/main";
 import {mixins} from "../../mixins";

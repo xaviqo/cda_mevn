@@ -224,8 +224,19 @@ export default {
       EventBus.$emit('toActorEditionForm_save',actor);
     },
     addNewData(tab){
-      this.backgrounds[tab].values.push(this.newBg);
-      this.changeActiveTab(tab);
+      if (!this.checkAllInputs()) {
+          EventBus.$emit('alert',{
+              color: 'red',
+              type: 'error',
+              msg: 'Los campos no pueden estar vacíos'
+          });
+      } else {
+          this.backgrounds[tab].values.push(this.newBg);
+          this.changeActiveTab(tab);
+      }
+    },
+    checkAllInputs(){
+      return (this.newBg.category && this.newBg.exp && this.newBg.date);
     },
     removeExperience(tab,index){
       this.backgrounds[tab].values.splice(index,1);
