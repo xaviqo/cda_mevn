@@ -1,0 +1,15 @@
+#cda-title {
+  font-size: 85%;
+  @media only screen and (min-width: 400px) {
+    font-size: 130%;
+  }
+  @media only screen and (min-width: 600px) {
+    font-size: 160%;
+  }
+  @media only screen and (min-width: 1000px) {
+    font-size: 170%;
+  }
+  @media only screen and (min-width: 1200px) {
+    font-size: 200%;
+  }
+}

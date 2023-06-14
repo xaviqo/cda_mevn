@@ -27,7 +27,7 @@
 }
 </style>
 <script>
-
+import './variables.scss';
 import { EventBus } from '@/main';
 import LogoBar from "@/components/LogoBar.vue";
 import ActorEditDialog from "@/components/ActorEditDialog.vue";

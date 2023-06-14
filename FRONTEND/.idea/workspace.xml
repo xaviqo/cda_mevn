@@ -5,20 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2075c024-dfc1-4c1a-87ae-e0883ac90842" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../BACKEND/public/uploads/63df91a1159f1a8a679e0992_575149.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BACKEND/public/uploads/63f0e081780399720fa637b9_857293.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BACKEND/public/uploads/63f0e081780399720fa637b9_880456.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioLanguages.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioMainImg.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioPersonalData.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioSkills.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/PersonalData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/ActorProfileOld.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BACKEND/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKEND/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/ActorEditBackground.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/ActorEditBackground.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/ActorEditProfile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/ActorEditProfile.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mixins.js" beforeDir="false" afterPath="$PROJECT_DIR$/mixins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dotenv/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dotenv/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dotenv/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dotenv/config.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dotenv/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dotenv/lib/cli-options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dotenv/lib/env-options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dotenv/lib/main.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dotenv/lib/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dotenv/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LogoBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LogoBar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/portfolio/PortfolioButtonsBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioButtonsBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/portfolio/PortfolioMainImg.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioMainImg.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/ActorProfile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ActorProfile.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/AdminPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AdminPanel.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +38,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="Vue Composition API Component" />
       </list>
     </option>
   </component>
@@ -40,6 +49,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2KM5NT3B2ZplfHQR1sLTnG7XP81" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,15 +61,21 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/xavi/Desktop/TRABAJOS/DAW-2/JS/JUEGO_AMAZONA&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/xavi/Desktop/Trabajos/Xavi/cda_mevn/FRONTEND&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/snap/webstorm/294/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -121,6 +139,13 @@
       <workItem from="1676790358389" duration="1381000" />
       <workItem from="1676835858796" duration="118000" />
       <workItem from="1676835988312" duration="4344000" />
+      <workItem from="1686077815546" duration="9000" />
+      <workItem from="1686077832468" duration="2000" />
+      <workItem from="1686077935979" duration="5132000" />
+      <workItem from="1686254172375" duration="1734000" />
+      <workItem from="1686485222624" duration="6765000" />
+      <workItem from="1686600113078" duration="2028000" />
+      <workItem from="1686689438495" duration="599000" />
     </task>
     <servers />
   </component>

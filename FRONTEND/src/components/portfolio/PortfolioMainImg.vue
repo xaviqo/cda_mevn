@@ -1,6 +1,6 @@
 <template>
   <v-card
-      class="pa-1"
+      class="pa-5"
       elevation="0"
   >
     <v-img
@@ -8,6 +8,9 @@
         :src=mainImg.secureUrl
         aspect-ratio="1"
         class="grey lighten-2 align-end"
+        width="350px"
+        height="350px"
+        style="border: 1px red solid !important;"
     >
       <template v-slot:placeholder>
         <v-row

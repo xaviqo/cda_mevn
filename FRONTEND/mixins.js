@@ -15,6 +15,9 @@ export const mixins = {
         },
         addFaceDetection(url) {
             return url.replace('image/upload/', 'image/upload/c_fill,c_thumb,g_face,w_650,h_650/');
+        },
+        getWindowWidth() {
+            return window.innerWidth;
         }
     },
 }

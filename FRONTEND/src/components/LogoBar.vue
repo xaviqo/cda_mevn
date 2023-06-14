@@ -1,30 +1,60 @@
 <template>
-    <v-app-bar
-        app
-        elevation="0"
-        dark
-        prominent
-    >
-      <v-col cols="4"></v-col>
-      <v-col cols="4" class="d-flex align-center justify-center">
-        <v-app-bar-title>
-          <div class="text-capitalize font-weight-light logoCda mt-2">
-            CARRUSEL DE ACTORES
-          </div>
-        </v-app-bar-title>
-      </v-col>
-      <v-col cols="4" class="d-flex justify-end mt-4">
-        <v-btn icon v-for="s in social" :key="s.logo" elevation="0" color="white">
-          <v-icon>{{s.logo}}</v-icon>
-        </v-btn>
-      </v-col>
-    </v-app-bar>
+  <v-app-bar
+      app
+      elevation="0"
+      dark
+      :prominent="!isMobile"
+  >
+    <v-col cols="4">
+      <div
+          id="cda-title"
+          class="text-capitalize font-weight-light text-no-wrap"
+          style="width: 100%"
+          :style="{ 'margin-top': titleMarginTop + 'px' }"
+      >
+<span v-if="getWindowWidth() > 400">
+CARRUSEL DE ACTORES
+</span>
+<span v-else class="text-body-2">
+CARRUSEL DE ACTORES
+</span>
+      </div>
+    </v-col>
+    <v-col cols="8" class="d-flex justify-end">
+      <v-btn icon v-for="s in social" :key="s.logo" elevation="0" color="white" :class="isMobile ? 'mt-0' : 'mt-5' ">
+        <v-icon >{{s.logo}}</v-icon>
+      </v-btn>
+    </v-col>
+  </v-app-bar>
 </template>
 
 <script>
+import {mixins} from "../../mixins";
+
 export default {
   name: "NavBar",
+  mixins: [mixins],
+  beforeDestroy () {
+    if (typeof window === 'undefined') return
+    window.removeEventListener('resize', this.onResize, { passive: true })
+  },
+  mounted () {
+    this.onResize()
+    window.addEventListener('resize', this.onResize, { passive: true })
+  },
+  methods: {
+    onResize () {
+      const windowWidth = this.getWindowWidth();
+
+      this.isMobile = windowWidth < 600;
+
+      this.titleMarginTop = windowWidth < 600 ? '1' : windowWidth < 1000 ? '25' : '15';
+
+    }
+  },
   data: () => ({
+    isMobile: false,
+    titleMarginTop: 0,
     social: [
       {
         logo: 'mdi-facebook',
@@ -45,7 +75,7 @@ export default {
 
 <style scoped>
 .logoCda{
-  font-size: 2em;
+  font-size: xx-large;
   letter-spacing: 2px;
 }
 </style>

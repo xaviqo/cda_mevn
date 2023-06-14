@@ -3,19 +3,24 @@
         elevation="0"
         dense
     >
-      <v-col
-          cols="3"
+      <template
+          v-if="getWindowWidth() > 550"
       >
-        <v-icon class="mr-2 mb-2">
-          mdi-movie-open
-        </v-icon>
-        <span
-            class="text-h1"
-            style="font-size: x-large !important;"
+        <v-col
+            cols="3"
+            md="0"
         >
-          Portfolio de {{ actorName }}
+          <v-icon class="mr-2 mb-2">
+            mdi-movie-open
+          </v-icon>
+          <span
+              class="text-h1"
+              style="font-size: x-large !important;"
+          >
+          {{ actorName }}
         </span>
-      </v-col>
+        </v-col>
+      </template>
       <v-tabs
           v-model="tab"
           fixed-tabs
@@ -40,9 +45,11 @@
 
 <script>
 import {EventBus} from "@/main";
+import {mixins} from "../../../mixins";
 
 export default {
   name: "PortfolioButtonsBar",
+  mixins: [mixins],
   data: () => ({
     tab: null,
   }),
