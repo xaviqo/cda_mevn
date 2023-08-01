@@ -2,6 +2,7 @@
   <v-list>
       <v-list-item
               v-for="ln in langs"
+              :key="ln.lang"
       >
           <v-list-item-title>
               <strong>{{ ln.lang }}:</strong> {{ ln.percent }}%
@@ -10,7 +11,7 @@
               <v-progress-linear
                       :value=ln.percent
                       height="25"
-                      active=false
+                      :active=false
                       color="#424242"
               >
               </v-progress-linear>

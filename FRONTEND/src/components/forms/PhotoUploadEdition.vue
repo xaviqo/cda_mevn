@@ -102,7 +102,7 @@
 
 <script>
 import {EventBus} from "@/main";
-import {mixins} from "../../../mixins";
+import {mixins} from "../../mixins/mixins";
 export default {
   name: "PhotoUploadEdition",
   mixins: [mixins],

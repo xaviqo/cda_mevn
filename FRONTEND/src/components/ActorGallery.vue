@@ -50,7 +50,7 @@
 <script>
 import ActorAdminActions from "@/components/ActorAdminActions.vue";
 import {EventBus} from "@/main";
-import {mixins} from "../../mixins";
+import {mixins} from "../mixins/mixins";
 
 export default {
   name: "ActorGallery",

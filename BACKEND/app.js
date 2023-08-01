@@ -9,8 +9,11 @@ require('dotenv').config();
 const app = express();
 const loginService = require('./service/login.service');
 
-sh    origin: 'http://localhost:8080'
-}))
+
+app.use(cors({
+    origin: 'http://localhost:8080'
+}));
+
 
 /*
 app.use(cors({

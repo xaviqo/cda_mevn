@@ -29,18 +29,18 @@ CARRUSEL DE ACTORES
 </template>
 
 <script>
-import {mixins} from "../../mixins";
+import {mixins} from "@/mixins/mixins";
 
 export default {
   name: "NavBar",
   mixins: [mixins],
   beforeDestroy () {
     if (typeof window === 'undefined') return
-    window.removeEventListener('resize', this.onResize, { passive: true })
+    window.removeEventListener('resize', this.onResize, { passive: true });
   },
   mounted () {
-    this.onResize()
-    window.addEventListener('resize', this.onResize, { passive: true })
+    this.onResize();
+    window.addEventListener('resize', this.onResize, { passive: true });
   },
   methods: {
     onResize () {

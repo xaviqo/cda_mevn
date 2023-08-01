@@ -56,7 +56,7 @@
 
 <script>
 import {EventBus} from "@/main";
-import {mixins} from "../../mixins";
+import {mixins} from "../mixins/mixins";
 import EditOptions from "@/constants/EditOptions";
 
 export default {

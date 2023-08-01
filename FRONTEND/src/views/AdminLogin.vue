@@ -60,7 +60,7 @@
 </style>
 <script>
 import {EventBus} from "@/main";
-import {mixins} from "../../mixins";
+import {mixins} from "../mixins/mixins";
 import AdminBar from "@/components/AdminBar.vue";
 
 export default {

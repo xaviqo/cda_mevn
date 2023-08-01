@@ -4,6 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import AdminLogin from "@/views/AdminLogin.vue";
 import AdminPanel from "@/views/AdminPanel.vue";
 import ActorProfile from "@/views/ActorProfile.vue";
+import ActorProfileOld from "@/views/ActorProfileOld.vue";
 
 Vue.use(VueRouter)
 
@@ -17,6 +18,11 @@ const routes = [
     path: '/portfolio/:name/:section?',
     name: 'profile',
     component: ActorProfile
+  },
+  {
+    path: '/portfolio-old/:name/:section?',
+    name: 'profile',
+    component: ActorProfileOld
   },
   {
     path: '/cda-admin',

@@ -29,7 +29,7 @@
 -->
 <script>
 import {EventBus} from "@/main";
-import {mixins} from "../../mixins";
+import {mixins} from "../mixins/mixins";
 import ActorGallery from "@/components/ActorGallery.vue";
 import AdminBar from "@/components/AdminBar.vue";
 import ActorEditDialog from "@/components/ActorEditDialog.vue";

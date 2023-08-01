@@ -58,7 +58,7 @@ import BackgroundTabs from "@/constants/BackgroundTabs";
 import PortfolioButtonsBar from "@/components/portfolio/PortfolioButtonsBar.vue";
 import PortfolioPersonalData from "@/components/portfolio/PortfolioPersonalData.vue";
 import PortfolioMainImg from "@/components/portfolio/PortfolioMainImg.vue";
-import {mixins} from "../../mixins";
+import {mixins} from "@/mixins/mixins";
 import PortfolioSkills from "@/components/portfolio/PortfolioSkills.vue";
 import PortfolioLanguages from "@/components/portfolio/PortfolioLanguages.vue";
 
