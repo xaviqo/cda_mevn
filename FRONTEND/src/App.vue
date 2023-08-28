@@ -12,18 +12,31 @@
   </v-app>
 </template>
 <style>
-::-webkit-scrollbar{
-  width: 12px;
-  background-color: #F5F5F5;
+/* Estilos para la scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
 }
-::-webkit-scrollbar-track{
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
-  background-color: rgba(75, 74, 74, .65);
+
+/* Fondo de la scrollbar */
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
 }
-::-webkit-scrollbar-thumb{
-  border-radius: 10px;
-  background-color: rgba(19, 7, 7, .5);
-  background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, .4) 50%,transparent,transparent)
+
+/* Barra desplazadora */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+  border: 2px solid #f5f5f5;
+}
+
+/* Color de la barra desplazadora al pasar el ratón */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Esquina inferior derecha de la scrollbar */
+::-webkit-scrollbar-corner {
+  background-color: #f5f5f5;
 }
 </style>
 <script>

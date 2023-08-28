@@ -4,7 +4,7 @@
         :actor-name=actor.name
         :tabs-array=tabsArray
     />
-    <v-row>
+    <v-row fill-height>
       <v-col
           sm="12"
           md="5"
@@ -15,7 +15,7 @@
               cols="12"
               class="d-flex justify-center"
           >
-            <PortfolioMainImg />
+            <PortfolioMainImg :skills="actor.skills"/>
           </v-col>
           <v-col v-if="windowWith < 960 && (urlSection === actor.name || !urlSection)" class="mt-n10">
             <PortfolioPhotosMobile
@@ -25,19 +25,38 @@
           </v-col>
           <v-col
               cols="12"
+              align="center"
+          >
+            <v-btn
+                v-for="sm in actor.media"
+                :key="sm.icon"
+                class="mx-6 mt-n9 mb-3 pa-1"
+                icon
+                small
+                elevation="1"
+                color="black"
+                @click="openURLInNewTab(sm.url)"
+            >
+                <v-icon dark>
+                  {{ sm.icon }}
+                </v-icon>
+            </v-btn>
+          </v-col>
+          <v-col
+              cols="12"
           >
             <PortfolioLanguages
                 class="mt-n10"
                 :langs=actor.languages
             />
           </v-col>
-          <v-col
+<!--          <v-col
               cols="12"
           >
             <PortfolioSkills
                 :skills="actor.skills"
             />
-          </v-col>
+          </v-col>-->
         </v-row>
       </v-col>
       <v-col v-if="windowWith > 960 && (urlSection === actor.name || !urlSection)">
@@ -50,10 +69,10 @@
         <PortfolioFormation :formation="actor.background.formation"/>
       </v-col>
       <v-col v-if="urlSection === BackgroundTabs['awards'].replace(/\s/g, '-').toLowerCase()">
-        premios
+        <PortfolioAwards :awards="actor.background.awards"></PortfolioAwards>
       </v-col>
       <v-col v-if="urlSection === BackgroundTabs['experience'].replace(/\s/g, '-').toLowerCase()">
-        experiencia
+        <PortfolioXp :experience="actor.background.experience"></PortfolioXp>
       </v-col>
     </v-row>
   </v-container>
@@ -70,6 +89,8 @@ import PortfolioPhotosMobile from "@/components/portfolio/PortfolioPhotosMobile.
 import PortfolioSkills from "@/components/portfolio/PortfolioSkills.vue";
 import BackgroundTabs from "@/constants/BackgroundTabs";
 import PortfolioFormation from "@/components/portfolio/PortfolioFormation.vue";
+import PortfolioXp from "@/components/portfolio/PortfolioXp.vue";
+import PortfolioAwards from "@/components/portfolio/PortfolioAwards.vue";
 
 export default defineComponent({
   name: "ActorProfile",
@@ -80,6 +101,8 @@ export default defineComponent({
   },
   mixins: [mixins],
   components: {
+    PortfolioAwards,
+    PortfolioXp,
     PortfolioFormation,
     PortfolioSkills,
     PortfolioPhotosMobile, PortfolioPhotosPC, PortfolioLanguages, PortfolioMainImg, PortfolioButtonsBar},
@@ -147,9 +170,12 @@ export default defineComponent({
         }
       });
     },
-    onResize () {
+    onResize() {
       this.windowWith = this.getWindowWidth();
       this.isMobile = this.windowWith < 600;
+    },
+    openURLInNewTab(url){
+      window.open(url, '_blank');
     }
   },
   created() {

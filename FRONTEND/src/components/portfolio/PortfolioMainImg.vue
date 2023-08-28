@@ -19,19 +19,29 @@
         ></v-progress-circular>
       </v-row>
     </template>
+    <PortfolioSkills
+        :skills="skills"
+    />
   </v-img>
 </template>
 
 <script>
 import {EventBus} from "@/main";
 import {mixins} from "@/mixins/mixins";
+import PortfolioSkills from "@/components/portfolio/PortfolioSkills.vue";
 
 export default {
   name: "PortfolioMainImg",
+  components: {PortfolioSkills},
   mixins: [mixins],
   data: () => ({
     mainImg: null
   }),
+  props: {
+    skills: {
+      required: true
+    }
+  },
   created() {
     EventBus.$on(
         'photosMobile_actorProfile_changeMainImg',

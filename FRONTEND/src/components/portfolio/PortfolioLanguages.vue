@@ -8,13 +8,12 @@
               <strong>{{ ln.lang }}:</strong> {{ ln.percent }}%
           </v-list-item-title>
           <v-list-item-subtitle>
-              <v-progress-linear
-                      :value=ln.percent
-                      height="25"
-                      :active=false
-                      color="#424242"
-              >
-              </v-progress-linear>
+            <v-progress-linear
+                :value=ln.percent
+                color="#212121"
+                height="10"
+            >
+            </v-progress-linear>
           </v-list-item-subtitle>
       </v-list-item>
   </v-list>
