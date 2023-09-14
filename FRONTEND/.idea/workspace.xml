@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2075c024-dfc1-4c1a-87ae-e0883ac90842" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioAwards.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioXp.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BACKEND/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKEND/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/portfolio/PortfolioFormation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioFormation.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/portfolio/PortfolioLanguages.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioLanguages.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/portfolio/PortfolioMainImg.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioMainImg.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/portfolio/PortfolioSkills.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioSkills.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/ActorProfile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ActorProfile.vue" afterDir="false" />
-    </list>
+    <list default="true" id="2075c024-dfc1-4c1a-87ae-e0883ac90842" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,29 +36,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/xavi/Desktop/TRABAJOS/GIT/cda_mevn/FRONTEND/src/components/portfolio",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "/snap/webstorm/332/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/xavi/Desktop/TRABAJOS/GIT/cda_mevn/FRONTEND&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/snap/webstorm/332/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/portfolio" />
@@ -151,6 +139,12 @@
       <workItem from="1690738784722" duration="6951000" />
       <workItem from="1693059232738" duration="150000" />
       <workItem from="1693154917019" duration="9213000" />
+      <workItem from="1693235832814" duration="633000" />
+      <workItem from="1694106829982" duration="11000" />
+      <workItem from="1694198025566" duration="610000" />
+      <workItem from="1694199259845" duration="6000" />
+      <workItem from="1694625093752" duration="1616000" />
+      <workItem from="1694707232677" duration="3385000" />
     </task>
     <servers />
   </component>
@@ -159,5 +153,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/ActorGallery.vue</url>
+          <line>2</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

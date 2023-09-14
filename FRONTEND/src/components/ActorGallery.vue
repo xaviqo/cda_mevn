@@ -1,20 +1,24 @@
 <template>
-  <v-row class="pa-8">
-    <template
-        v-if="actors.length > 0"
-        v-for="a in actors"
-    >
-      <v-col
-          v-if="showCard(a)"
-          :key="a._id"
-          class="d-flex justify-center child-flex"
+  <v-container>
+    <v-row class="pa-8 mx-auto" style="max-width: 1200px">
+      <template
+          v-if="actors.length > 0"
+          v-for="a in actors"
       >
-        <v-card
-            outlined
-            class="pa-1"
-            max-width="315px"
-            @click=profileIfNotAdmin(a.name)
+        <v-col
+            v-if="showCard(a)"
+            :key="a._id"
+            class="d-flex justify-center child-flex"
+            cols="12"
+            sm="6"
+            md="4"
+            lg="3"
         >
+          <v-card
+              outlined
+              max-width="350px"
+              @click=profileIfNotAdmin(a.name)
+          >
             <v-img
                 :key=a.photo.publicId
                 :src=a.photo.secureUrl
@@ -41,10 +45,11 @@
                 </ActorAdminActions>
               </div>
             </v-img>
-        </v-card>
-      </v-col>
-    </template>
-  </v-row>
+          </v-card>
+        </v-col>
+      </template>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
