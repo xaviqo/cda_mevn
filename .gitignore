@@ -1,1 +1,51 @@
-.env
+# Node.js / Express (Backend)
+/BACKEND/node_modules/
+/BACKEND/npm-debug.log
+/BACKEND/yarn-error.log
+
+# Vue.js (Frontend)
+/FRONTEND/dist/
+/FRONTEND/node_modules/
+/FRONTEND/npm-debug.log
+/FRONTEND/yarn-error.log
+/FRONTEND/*.log
+/FRONTEND/*.pid
+/FRONTEND/*.seed
+/FRONTEND/*.pid.lock
+/FRONTEND/*.code-workspace
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+
+# Dependencias locales (pueden variar según tu configuración)
+.env.local
+.env.*.local
+
+# Archivo de construcción de Docker
+Dockerfile
+
+# Dependencias de Docker
+/BACKEND/node_modules/
+/BACKEND/npm-debug.log
+/BACKEND/yarn-error.log
+
+# Carpeta de compilación de Vuetify (Frontend)
+/FRONTEND/src-compiled/
+
+# Archivos de construcción de Vuetify (Frontend)
+/FRONTEND/dist/*
+
+# Carpeta temporal de Vuetify (Frontend)
+/FRONTEND/temp/
+
+# Carpeta de construcción de Vuetify CLI (Frontend)
+/FRONTEND/node_modules/@vue/cli-service/
+
+# Archivo de entorno (Backend)
+/BACKEND/.env
+/FRONTEND/.env
