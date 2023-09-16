@@ -195,7 +195,6 @@ export default {
           .get(`/images/retrieve/${this.actorId}`)
           .then( res => {
             this.photos = res.data.photos;
-            console.log(this.photos)
             this.photos.forEach( p => {
               console.log("hey")
               p.url = this.addFaceDetection(p.url);

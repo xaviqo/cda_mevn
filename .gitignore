@@ -21,7 +21,6 @@
 .idea/
 
 # Logs
-logs/
 *.log
 
 # Dependencias locales (pueden variar según tu configuración)

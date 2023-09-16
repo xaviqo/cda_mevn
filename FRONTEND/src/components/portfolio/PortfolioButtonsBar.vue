@@ -52,7 +52,7 @@ export default {
   }),
   mounted() {
     EventBus.$on('toButtonsBar_actorProfile', tabIndex => {
-        this.tab = (tabIndex)
+      this.tab = (tabIndex)
     });
     this.onResize();
     window.addEventListener('resize', this.onResize, { passive: true });
@@ -63,6 +63,9 @@ export default {
     },
     tabsArray: {
       required: true
+    },
+    hasVideos: {
+      required: true
     }
   },
   methods:{
@@ -72,10 +75,15 @@ export default {
     },
     goTo(section){
       let newPath = '';
-      if (section === this.actorName)
+      // if (section === null) {
+      //   section = 'videos';
+      //   newPath = `/portfolio/${this.actorName.replace(/\s/g, '-').toLowerCase()}/videos`;
+      // } else
+      if (section === this.actorName) {
         newPath = `/portfolio/${this.actorName.replace(/\s/g, '-').toLowerCase()}`;
-      else
+      } else {
         newPath = `/portfolio/${this.actorName.replace(/\s/g, '-').toLowerCase()}/${section}`;
+      }
 
       if (this.$route.path !== newPath) this.$router.push(newPath);
 

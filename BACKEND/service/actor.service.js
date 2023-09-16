@@ -2,7 +2,9 @@ const Actor = require('../models/Actor');
 const multer = require("multer");
 const path = require("path");
 const cloudinary = require('cloudinary');
+const { log } = require('console');
 const actorService = {};
+const fs = require('fs');
 
 cloudinary.config({
    cloud_name: process.env.CLOUDINARY_NAME,
@@ -32,6 +34,7 @@ actorService.create = async (req, res) => {
             message: `Perfil de ${actor.name} creado con éxito`,
         });
     } catch (error) {
+        console.error(error);
         res.status(500).json({
             code: 500,
             message: `No se ha podido crear un nuevo perfil`,
@@ -41,7 +44,7 @@ actorService.create = async (req, res) => {
 }
 
 actorService.update = async (req,res) => {
-    console.log(req.body);
+
     try {
         await Actor.updateOne(
             { _id : req.params.id },
@@ -51,6 +54,7 @@ actorService.update = async (req,res) => {
             message: `Perfil actualizado con éxito`,
         });
     } catch (error) {
+        console.error(error);
         res.status(500).json({
             code: 500,
             message: `No se ha podido actualizar el perfil`,
@@ -58,6 +62,23 @@ actorService.update = async (req,res) => {
         });
     }
 
+}
+
+actorService.uploadVideo = async (req,res) => {
+    try {
+        const video = {
+            title: req.params.title.trim(),
+            file: req.file.filename
+        };
+        await Actor.updateOne(
+            { _id : req.params.id },
+            { $push: { 'videos' : video }});
+        res.status(200).json({
+            message: `Perfil actualizado con éxito`
+        });
+    } catch (error) {
+        console.error(error);
+    }
 }
 
 actorService.uploadImage = async (req,res) => {
@@ -85,10 +106,27 @@ actorService.uploadImage = async (req,res) => {
             firstImage: firstImage
         });
     } catch (error) {
-        console.log(error);
+        console.error(error);
         res.status(500).json({
             code: 500,
             message: `Error: ${error.message}`,
+            dateTime: new Date()
+        });
+    }
+}
+
+actorService.retrieveVideo = async (req,res) => {
+    try {
+        const videoFile = path.join(__dirname,'../public/uploads',req.params.idVideo);
+        if (!fs.existsSync(videoFile)) {
+            return res.status(404).json({ message: 'Video no encontrado' });
+        }
+        res.sendFile(videoFile);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({
+            code: 500,
+            message: `No se ha podido recuperar el vídeo solicitado`,
             dateTime: new Date()
         });
     }
@@ -100,6 +138,7 @@ actorService.retrieveVideos = async (req,res) => {
             .select({ 'videos': 1 });
         res.status(200).json(actor);
     } catch (error) {
+        console.error(error);
         res.status(500).json({
             code: 500,
             message: `No se ha podido recuperar la experiencia del perfil`,
@@ -114,6 +153,7 @@ actorService.retrieveImages = async (req,res) => {
             .select({ 'photos': 1 });
         res.status(200).json(actor);
     } catch (error) {
+        console.error(error);
         res.status(500).json({
             code: 500,
             message: "Error cargando las imágenes del actor",
@@ -127,8 +167,14 @@ actorService.retrieveExperiences = async (req,res) => {
         const actor = await Actor.findById({ _id : req.params.id }).select({
             'background': 1,
         });
+
+        actor.background.awards?.values.sort(sortByDate);
+        actor.background.formation?.values.sort(sortByDate);
+        actor.background.experience?.values.sort(sortByDate);
+
         res.status(200).json(actor);
     } catch (error) {
+        console.error(error);
         res.status(500).json({
             code: 500,
             message: `No se ha podido recuperar la experiencia del perfil`,
@@ -144,6 +190,10 @@ actorService.retrieveFullProfile = async (req,res) => {
             active: true
         });
 
+        actor.background.awards?.values.sort(sortByDate);
+        actor.background.formation?.values.sort(sortByDate);
+        actor.background.experience?.values.sort(sortByDate);
+
         if (actor === null){
             res.status(404).json({
                 code: 404,
@@ -154,6 +204,7 @@ actorService.retrieveFullProfile = async (req,res) => {
             res.status(200).json(actor);
         }
     } catch (error) {
+        console.error(error);
         res.status(500).json({
             code: 500,
             message: `Ha ocurrido un error recuperando el perfil indicado`,
@@ -176,6 +227,7 @@ actorService.retrieveProfile = async (req,res) => {
         });
         res.status(200).json(actor);
     } catch (error) {
+        console.error(error);
         res.status(500).json({
             code: 500,
             message: `No se ha podido recuperar el perfil`,
@@ -191,6 +243,7 @@ actorService.retrieveSocial = async (req,res) => {
         });
         res.status(200).json(actor);
     } catch (error) {
+        console.error(error);
         res.status(500).json({
             code: 500,
             message: `No se han podido recuperar las redes sociales`,
@@ -216,6 +269,7 @@ actorService.removeImage = async (req, res) => {
             message: "Imagen eliminada"
         });
     } catch (error) {
+        console.error(error);
         res.status(500).json({
             code: 500,
             message: "Error eliminando imagen",
@@ -241,6 +295,7 @@ actorService.changeMainImage = async (req, res) => {
             message: "Imagen principal cambiada"
         });
     } catch (error) {
+        console.error(error);
         res.status(500).json({
             code: 500,
             message: "Error cambiando la imagen principal",
@@ -256,6 +311,7 @@ actorService.delete = async (req,res) => {
             message: `Perfil de ${actor.name} eliminado con éxito`,
         });
     } catch (error) {
+        console.error(error);
         res.status(500).json({
             code: 500,
             message: `No se ha podido eliminar el perfil`,
@@ -273,6 +329,7 @@ actorService.changeStatus = async (req,res) => {
             message: `Perfil de ${actor.name} ${actor.active?'activado':'desactivado'}`,
         });
     } catch (error) {
+        console.error(error);
         res.status(500).json({
             code: 500,
             message: `No se ha podido cambiar el estado del perfil`,
@@ -304,13 +361,19 @@ actorService.gallery = async (req, res) => {
             }
         });
         res.status(200).json(filteredActors);
+
     } catch (error) {
+        console.error(error);
         res.status(500).json({
             code: 500,
             message: "Error cargando galería de la base de datos",
             dateTime: new Date()
         });
     }
+}
+
+function sortByDate(a,b) {
+    return parseInt(b.date) - parseInt(a.date);
 }
 
 module.exports = actorService;

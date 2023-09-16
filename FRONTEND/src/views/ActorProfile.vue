@@ -3,6 +3,7 @@
     <PortfolioButtonsBar
         :actor-name=actor.name
         :tabs-array=tabsArray
+        :has-videos="actor.videos?.length > 0"
     />
     <v-row fill-height>
       <v-col
@@ -75,16 +76,9 @@
       <v-col v-if="urlSection === BackgroundTabs['experience'].replace(/\s/g, '-').toLowerCase()">
         <PortfolioXp :experience="actor.background.experience"></PortfolioXp>
       </v-col>
-<!--      <v-col
-          sm="12"
-          md="1"
-          lg="2"
-          class="d-flex mt-3"
-      >
-        <PortfolioPersonalData
-            :personal-data="personalData"
-        />
-      </v-col>-->
+      <v-col v-if="urlSection === 'videos'">
+        <PortfolioVideos :videos="actor.videos" />
+      </v-col>
     </v-row>
   </v-container>
 </template>
@@ -104,6 +98,7 @@ import PortfolioXp from "@/components/portfolio/PortfolioXp.vue";
 import PortfolioAwards from "@/components/portfolio/PortfolioAwards.vue";
 import PortfolioPersonalData from "@/components/portfolio/PortfolioPersonalData.vue";
 import PortfolioTabsAllActors from "@/components/portfolio/PortfolioTabsAllActors.vue";
+import PortfolioVideos from "@/components/portfolio/PortfolioVideos.vue";
 
 export default defineComponent({
   name: "ActorProfile",
@@ -114,6 +109,7 @@ export default defineComponent({
   },
   mixins: [mixins],
   components: {
+    PortfolioVideos,
     PortfolioTabsAllActors,
     PortfolioPersonalData,
     PortfolioAwards,
@@ -149,6 +145,7 @@ export default defineComponent({
       this.axios
           .get(`/full-profile/retrieve/${this.urlProfile}`)
           .then(res => {
+            console.log(res.data)
             this.actor = res.data;
             this.preparePersonalData(this.actor);
             this.prepareMainImg(this.actor);
@@ -175,12 +172,18 @@ export default defineComponent({
       }
     },
     setCurrentTab(urlSection) {
+      if (this.actor.videos.length > 0) {
+        this.tabsArray.push({
+          bgName: 'Videos',
+          bgUrl: 'videos'
+        });
+      }
       for (const bg of Object.keys(this.actor.background)) {
         if (this.actor.background[bg].active) {
           this.tabsArray.push({
             bgName: BackgroundTabs[bg],
             bgUrl: BackgroundTabs[bg].replace(/\s/g, '-').toLowerCase()
-          })
+          });
         }
       }
       if (urlSection !== undefined) {
