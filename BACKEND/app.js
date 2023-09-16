@@ -12,11 +12,11 @@ const app = express();
 const loginService = require('./service/login.service');
 
 app.use(cors({
-    origin: 'https://cda.xavi.tech'
+    origin: 'http://localhost:8080'
 }));
 
 const loggerTime = moment().format('YYYY-MM-DD_HH-mm-ss');
-const logFileName = `CDA_${timestamp}.log`;
+const logFileName = `CDA_${loggerTime}.log`;
 
 const logger = winston.createLogger({
     level: 'info',

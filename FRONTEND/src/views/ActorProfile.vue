@@ -7,8 +7,8 @@
     <v-row fill-height>
       <v-col
           sm="12"
-          md="5"
-          lg="4"
+          md="4"
+          lg="3"
       >
         <v-row>
           <v-col
@@ -50,18 +50,19 @@
                 :langs=actor.languages
             />
           </v-col>
-<!--          <v-col
+         <v-col
               cols="12"
           >
-            <PortfolioSkills
-                :skills="actor.skills"
-            />
-          </v-col>-->
+            <PortfolioTabsAllActors  :actor-name="actor.name"/>
+          </v-col>
         </v-row>
       </v-col>
       <v-col v-if="windowWith > 960 && (urlSection === actor.name || !urlSection)">
+        <PortfolioPersonalData
+            :personal-data="personalData"
+        />
         <PortfolioPhotosPC
-            class="pa-4"
+            class="px-4"
             :photos=photos
         />
       </v-col>
@@ -74,6 +75,16 @@
       <v-col v-if="urlSection === BackgroundTabs['experience'].replace(/\s/g, '-').toLowerCase()">
         <PortfolioXp :experience="actor.background.experience"></PortfolioXp>
       </v-col>
+<!--      <v-col
+          sm="12"
+          md="1"
+          lg="2"
+          class="d-flex mt-3"
+      >
+        <PortfolioPersonalData
+            :personal-data="personalData"
+        />
+      </v-col>-->
     </v-row>
   </v-container>
 </template>
@@ -91,6 +102,8 @@ import BackgroundTabs from "@/constants/BackgroundTabs";
 import PortfolioFormation from "@/components/portfolio/PortfolioFormation.vue";
 import PortfolioXp from "@/components/portfolio/PortfolioXp.vue";
 import PortfolioAwards from "@/components/portfolio/PortfolioAwards.vue";
+import PortfolioPersonalData from "@/components/portfolio/PortfolioPersonalData.vue";
+import PortfolioTabsAllActors from "@/components/portfolio/PortfolioTabsAllActors.vue";
 
 export default defineComponent({
   name: "ActorProfile",
@@ -101,11 +114,18 @@ export default defineComponent({
   },
   mixins: [mixins],
   components: {
+    PortfolioTabsAllActors,
+    PortfolioPersonalData,
     PortfolioAwards,
     PortfolioXp,
     PortfolioFormation,
     PortfolioSkills,
-    PortfolioPhotosMobile, PortfolioPhotosPC, PortfolioLanguages, PortfolioMainImg, PortfolioButtonsBar},
+    PortfolioPhotosMobile,
+    PortfolioPhotosPC,
+    PortfolioLanguages,
+    PortfolioMainImg,
+    PortfolioButtonsBar
+  },
   data: () => ({
     urlProfile: '',
     urlSection: null,
@@ -130,6 +150,7 @@ export default defineComponent({
           .get(`/full-profile/retrieve/${this.urlProfile}`)
           .then(res => {
             this.actor = res.data;
+            this.preparePersonalData(this.actor);
             this.prepareMainImg(this.actor);
             this.setCurrentTab(this.$route.params.section)
           })
@@ -142,6 +163,16 @@ export default defineComponent({
             });
             this.$router.push(`/`);
           });
+    },
+    preparePersonalData(actor) {
+      this.personalData = {
+        name: actor.name,
+        age: actor.age,
+        eyes: actor.eyes,
+        hair: actor.hair,
+        height: actor.height,
+        languages: actor.languages
+      }
     },
     setCurrentTab(urlSection) {
       for (const bg of Object.keys(this.actor.background)) {
