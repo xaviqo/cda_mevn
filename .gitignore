@@ -3,6 +3,8 @@
 /BACKEND/npm-debug.log
 /BACKEND/yarn-error.log
 
+/BACKEND/public/*
+
 # Vue.js (Frontend)
 /FRONTEND/dist/
 /FRONTEND/node_modules/
