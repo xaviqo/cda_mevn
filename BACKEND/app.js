@@ -16,7 +16,7 @@ app.use(cors({
 }));
 
 const loggerTime = moment().format('YYYY-MM-DD_HH-mm-ss');
-const logFileName = `CDA_${loggerTime}.log`;
+const logFileName = `CDA_${loggerTime}`;
 
 const logger = winston.createLogger({
     level: 'info',

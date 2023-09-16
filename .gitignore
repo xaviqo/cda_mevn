@@ -1,3 +1,5 @@
+**/node_modules/
+
 # Node.js / Express (Backend)
 /BACKEND/node_modules/
 /BACKEND/npm-debug.log
