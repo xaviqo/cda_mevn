@@ -5,197 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2075c024-dfc1-4c1a-87ae-e0883ac90842" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioVideos.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BACKEND/controller/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKEND/controller/controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BACKEND/public/uploads/65033a3a4e96724236615016_770848.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BACKEND/public/uploads/65033a444e9672423661501a_782861.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BACKEND/public/uploads/65033a4a4e9672423661501e_794989.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BACKEND/public/uploads/65033a524e96724236615022_822333.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BACKEND/public/uploads/65033a584e96724236615026_833429.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BACKEND/public/uploads/65033a614e9672423661502a_384377.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BACKEND/public/uploads/65033a6a4e9672423661502e_405607.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BACKEND/service/actor.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKEND/service/actor.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/acorn/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/acorn/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/acorn/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/acorn/dist/acorn.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn/dist/acorn.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/acorn/dist/acorn.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn/dist/acorn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/acorn/dist/acorn.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn/dist/acorn.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/acorn/dist/acorn.mjs.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/acorn/dist/bin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn/dist/bin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/acorn/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/define-properties/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/define-properties/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/define-properties/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/define-properties/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/define-properties/.github/FUNDING.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/define-properties/.github/FUNDING.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/define-properties/.nycrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/define-properties/.nycrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/define-properties/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/define-properties/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/define-properties/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/define-properties/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/define-properties/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/define-properties/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/define-properties/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/define-properties/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/define-properties/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/define-properties/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-intrinsic/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/get-intrinsic/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-intrinsic/.github/FUNDING.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/get-intrinsic/.github/FUNDING.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-intrinsic/.nycrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/get-intrinsic/.nycrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-intrinsic/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/get-intrinsic/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-intrinsic/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/get-intrinsic/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-intrinsic/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/get-intrinsic/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-intrinsic/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/get-intrinsic/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-intrinsic/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/get-intrinsic/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-intrinsic/test/GetIntrinsic.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/get-intrinsic/test/GetIntrinsic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-core-module/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-core-module/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-core-module/.nycrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-core-module/.nycrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-core-module/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-core-module/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-core-module/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-core-module/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-core-module/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-core-module/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-core-module/core.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-core-module/core.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-core-module/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-core-module/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-core-module/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-core-module/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-core-module/test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-core-module/test/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/.github/FUNDING.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/.github/FUNDING.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/.nycrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/.nycrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/example/all.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/example/all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/example/circular.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/example/circular.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/example/fn.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/example/fn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/example/inspect.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/example/inspect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/package-support.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/package-support.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/readme.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/readme.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/test-core-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/test-core-js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/test/bigint.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/test/bigint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/test/browser/dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/test/browser/dom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/test/circular.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/test/circular.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/test/deep.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/test/deep.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/test/element.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/test/element.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/test/err.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/test/err.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/test/fakes.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/test/fakes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/test/fn.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/test/fn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/test/has.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/test/has.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/test/holes.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/test/holes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/test/indent-option.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/test/indent-option.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/test/inspect.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/test/inspect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/test/lowbyte.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/test/lowbyte.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/test/number.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/test/number.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/test/quoteStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/test/quoteStyle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/test/toStringTag.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/test/toStringTag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/test/undef.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/test/undef.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/test/values.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/test/values.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/object-inspect/util.inspect.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-inspect/util.inspect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/.github/FUNDING.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/.github/FUNDING.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/SECURITY.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/SECURITY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/async.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/async.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/bin/resolve" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/bin/resolve" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/example/async.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/example/async.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/example/sync.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/example/sync.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/lib/async.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/lib/async.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/lib/caller.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/lib/caller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/lib/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/lib/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/lib/core.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/lib/core.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/lib/homedir.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/lib/homedir.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/lib/is-core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/lib/is-core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/lib/node-modules-paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/lib/node-modules-paths.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/lib/normalize-options.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/lib/normalize-options.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/lib/sync.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/lib/sync.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/readme.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/readme.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/sync.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/sync.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/dotdot.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/dotdot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/dotdot/abc/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/dotdot/abc/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/dotdot/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/dotdot/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/faulty_basedir.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/faulty_basedir.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/filter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/filter_sync.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/filter_sync.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/home_paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/home_paths.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/home_paths_sync.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/home_paths_sync.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/mock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/mock_sync.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/mock_sync.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/module_dir.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/module_dir.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/module_dir/xmodules/aaa/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/module_dir/xmodules/aaa/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/module_dir/ymodules/aaa/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/module_dir/ymodules/aaa/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/module_dir/zmodules/bbb/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/module_dir/zmodules/bbb/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/module_dir/zmodules/bbb/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/module_dir/zmodules/bbb/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/node-modules-paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/node-modules-paths.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/node_path.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/node_path.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/node_path/x/aaa/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/node_path/x/aaa/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/node_path/x/ccc/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/node_path/x/ccc/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/node_path/y/bbb/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/node_path/y/bbb/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/node_path/y/ccc/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/node_path/y/ccc/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/nonstring.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/nonstring.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/pathfilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/pathfilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/pathfilter/deep_ref/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/pathfilter/deep_ref/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/precedence.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/precedence.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/precedence/aaa.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/precedence/aaa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/precedence/aaa/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/precedence/aaa/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/precedence/aaa/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/precedence/aaa/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/precedence/bbb.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/precedence/bbb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/precedence/bbb/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/precedence/bbb/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/baz/doom.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/baz/doom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/baz/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/baz/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/baz/quux.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/baz/quux.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/browser_field/a.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/browser_field/a.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/browser_field/b.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/browser_field/b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/browser_field/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/browser_field/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/cup.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/cup.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/dot_main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/dot_main/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/dot_main/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/dot_main/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/dot_slash_main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/dot_slash_main/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/dot_slash_main/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/dot_slash_main/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/false_main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/false_main/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/false_main/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/false_main/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/foo.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/foo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/incorrect_main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/incorrect_main/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/incorrect_main/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/incorrect_main/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/invalid_main/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/invalid_main/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/malformed_package_json/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/malformed_package_json/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/malformed_package_json/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/malformed_package_json/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/mug.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/mug.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/mug.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/mug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/multirepo/lerna.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/multirepo/lerna.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/multirepo/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/multirepo/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/multirepo/packages/package-a/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/multirepo/packages/package-a/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/multirepo/packages/package-a/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/multirepo/packages/package-a/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/multirepo/packages/package-b/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/multirepo/packages/package-b/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/multirepo/packages/package-b/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/multirepo/packages/package-b/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/nested_symlinks/mylib/async.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/nested_symlinks/mylib/async.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/nested_symlinks/mylib/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/nested_symlinks/mylib/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/nested_symlinks/mylib/sync.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/nested_symlinks/mylib/sync.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/other_path/lib/other-lib.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/other_path/lib/other-lib.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/other_path/root.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/other_path/root.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/quux/foo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/quux/foo/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/same_names/foo.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/same_names/foo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/same_names/foo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/same_names/foo/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/symlinked/_/node_modules/foo.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/symlinked/_/node_modules/foo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/symlinked/_/symlink_target/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/symlinked/_/symlink_target/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/symlinked/package/bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/symlinked/package/bar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/symlinked/package/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/symlinked/package/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver/without_basedir/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver/without_basedir/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/resolver_sync.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/resolver_sync.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/shadowed_core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/shadowed_core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/shadowed_core/node_modules/util/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/shadowed_core/node_modules/util/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/subdirs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/subdirs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve/test/symlinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/test/symlinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/semver/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/semver/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/semver/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/semver/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/semver/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/semver/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/semver/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/semver/range.bnf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/semver/range.bnf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/semver/semver.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/semver/semver.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/PhotoUploadEdition.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/PhotoUploadEdition.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/VideoUploadEdition.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/VideoUploadEdition.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/portfolio/PortfolioButtonsBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/PortfolioButtonsBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/ActorProfile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ActorProfile.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,29 +38,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/xavi/Desktop/TRABAJOS/GIT/CDA/cda_mevn/FRONTEND",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "/snap/webstorm/334/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/xavi/Desktop/TRABAJOS/GIT/CDA/cda_mevn/FRONTEND&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/snap/webstorm/334/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/portfolio" />
@@ -338,7 +148,9 @@
       <workItem from="1694625093752" duration="1616000" />
       <workItem from="1694707232677" duration="3385000" />
       <workItem from="1694712912308" duration="3310000" />
-      <workItem from="1694862392945" duration="13347000" />
+      <workItem from="1694862392945" duration="13651000" />
+      <workItem from="1694944726246" duration="191000" />
+      <workItem from="1694945426190" duration="480000" />
     </task>
     <servers />
   </component>
