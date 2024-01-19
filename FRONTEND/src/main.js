@@ -6,40 +6,40 @@ import vuetify from './plugins/vuetify'
 import axios from 'axios'
 import vueYoutubeEmbed from "vue-youtube-embed";
 import VueAxios from 'vue-axios'
+import VueMasonry from 'vue-masonry-css'
 
 Vue.use(VueAxios,axios);
 Vue.use(vueYoutubeEmbed);
+Vue.use(VueMasonry);
 
 Vue.config.productionTip = false
 
-axios.defaults.baseURL = 'http://localhost:1234/api';
-//axios.defaults.baseURL = 'http://130.162.47.190:3000/api';
+axios.defaults.baseURL = 'http://localhost:10452/api';
 const CDA_SESSION = 'cda_session';
 axios.interceptors.request.use(
     async config => {
-      const ls = JSON.parse(localStorage.getItem(CDA_SESSION));
-      if (ls){
-        config.headers = {
-          'x-access-token': ls['token'],
-          'cda-id': ls['id'],
-          'Accept': 'application/json',
+        const ls = JSON.parse(localStorage.getItem(CDA_SESSION));
+        if (ls){
+            config.headers = {
+                'x-access-token': ls['token'],
+                'cda-id': ls['id'],
+                'Accept': 'application/json',
+            }
+        } else {
+            config.headers = {
+                'Accept': 'application/json',
+            }
         }
-      } else {
-        config.headers = {
-          'Accept': 'application/json',
-        }
-      }
-
-      return config;
+        return config;
     },
     error => {
-      Promise.reject(error)
+        Promise.reject(error)
     });
 export const EventBus = new Vue();
 
 new Vue({
-  router,
-  store,
-  vuetify,
-  render: h => h(App)
+    router,
+    store,
+    vuetify,
+    render: h => h(App)
 }).$mount('#app')
