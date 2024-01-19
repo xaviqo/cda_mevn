@@ -14,6 +14,7 @@ Vue.use(VueMasonry);
 
 Vue.config.productionTip = false
 
+// axios.defaults.baseURL = 'https://api-cda.xavi.tech/api';
 axios.defaults.baseURL = 'http://localhost:10452/api';
 const CDA_SESSION = 'cda_session';
 axios.interceptors.request.use(
