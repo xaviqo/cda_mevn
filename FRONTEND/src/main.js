@@ -6,7 +6,6 @@ import vuetify from './plugins/vuetify'
 import axios from 'axios'
 import vueYoutubeEmbed from "vue-youtube-embed";
 import VueAxios from 'vue-axios'
-import VueMasonry from 'vue-masonry-css'
 
 Vue.use(VueAxios,axios);
 Vue.use(vueYoutubeEmbed);
