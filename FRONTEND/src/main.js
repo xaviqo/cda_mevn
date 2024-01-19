@@ -9,7 +9,6 @@ import VueAxios from 'vue-axios'
 
 Vue.use(VueAxios,axios);
 Vue.use(vueYoutubeEmbed);
-Vue.use(VueMasonry);
 
 Vue.config.productionTip = false
 
