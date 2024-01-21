@@ -1,12 +1,13 @@
 <template>
   <v-container fluid class="pa-0">
     <PortfolioButtonsBar
-        :actor-name=actor.name
-        :tabs-array=tabsArray
+        :actor-name="personalData.name"
+        :tabs-array="tabsArray"
         :has-videos="actor.videos?.length > 0"
     />
     <v-row fill-height>
       <v-col
+          v-if="(windowWith >= 960 || (urlSection === null || urlSection === actor.name))"
           sm="12"
           md="4"
           lg="3"
@@ -16,7 +17,10 @@
               cols="12"
               class="d-flex justify-center"
           >
-            <PortfolioMainImg :skills="actor.skills"/>
+            <PortfolioMainImg
+                :skills="actor.skills"
+                :main-img-prop="mainImg"
+            />
           </v-col>
           <v-col v-if="windowWith < 960 && (urlSection === actor.name || !urlSection)" class="mt-n10">
             <PortfolioPhotosMobile
@@ -29,6 +33,7 @@
               align="center"
           >
             <v-btn
+                v-
                 v-for="sm in actor.media"
                 :key="sm.icon"
                 class="mx-6 mt-n9 mb-3 pa-1"
@@ -54,7 +59,9 @@
          <v-col
               cols="12"
           >
-            <PortfolioTabsAllActors  :actor-name="actor.name"/>
+            <PortfolioTabsAllActors
+                :actor-name="actor.name"
+            />
           </v-col>
         </v-row>
       </v-col>
@@ -127,7 +134,7 @@ export default defineComponent({
     urlSection: null,
     tabsArray: [],
     actor: {
-      actorName: '',
+      name: '',
       languages: [],
       background: {}
     },
@@ -145,7 +152,6 @@ export default defineComponent({
       this.axios
           .get(`/full-profile/retrieve/${this.urlProfile}`)
           .then(res => {
-            console.log(res.data)
             this.actor = res.data;
             this.preparePersonalData(this.actor);
             this.prepareMainImg(this.actor);
@@ -214,7 +220,6 @@ export default defineComponent({
   },
   created() {
     this.urlProfile = this.$route.params.name;
-    this.retrieveFullProfile();
     EventBus.$on(
         'photosMobile_actorProfile_changeMainImg',
         (secureUrl) => {
@@ -226,6 +231,7 @@ export default defineComponent({
     });
   },
   mounted() {
+    this.retrieveFullProfile();
     EventBus.$on('toButtonsBar_actorProfile', tabIndex => {
       this.tab = (tabIndex)
     });

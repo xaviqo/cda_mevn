@@ -32,14 +32,14 @@
               <template
                   v-for="fmt in formation.values"
               >
-                <v-list-item
-                    v-if="fmt.category === category"
-                >
-                  <v-list-item-content>
-                    <v-list-item-title>{{ fmt.exp }}</v-list-item-title>
-                    <v-list-item-subtitle>{{ fmt.date }}</v-list-item-subtitle>
-                  </v-list-item-content>
-                </v-list-item>
+                <div v-if="fmt.category === category" class="ma-3">
+                  <div class="subtitle-1">
+                    {{ fmt.exp }}
+                  </div>
+                  <div class="caption font-weight-bold" style="color: gray">
+                    {{ fmt.date }}
+                  </div>
+                </div>
               </template>
             </template>
           </v-list>

@@ -16,12 +16,12 @@
             :key=input.text
             v-if="input.type"
         >
-            <v-text-field
-                v-if="input.type === 'text'"
-                :prepend-icon=input.icon
-                :label=input.label
-                v-model=input.value
-            ></v-text-field>
+          <v-text-field
+              v-if="input.type === 'text'"
+              :prepend-icon=input.icon
+              :label=input.label
+              v-model=input.value
+          ></v-text-field>
           <v-combobox
               v-if="input.type === 'combobox'"
               :prepend-icon=input.icon

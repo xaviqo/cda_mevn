@@ -40,6 +40,9 @@ export default {
   props: {
     skills: {
       required: true
+    },
+    mainImgProp: {
+      required: true
     }
   },
   created() {
@@ -49,6 +52,7 @@ export default {
           this.mainImg = this.addFaceDetection(secureUrl);
         }
     );
+    this.mainImg = this.mainImgProp;
   }
 }
 </script>

@@ -30,17 +30,15 @@
               <v-subheader class="text-h6">
                 {{ category.toUpperCase() }}
               </v-subheader>
-              <template
-                  v-for="xp in experience.values"
-              >
-                <v-list-item
-                    v-if="xp.category === category"
-                >
-                  <v-list-item-content>
-                    <v-list-item-title>{{ xp.exp }}</v-list-item-title>
-                    <v-list-item-subtitle>{{ xp.date }}</v-list-item-subtitle>
-                  </v-list-item-content>
-                </v-list-item>
+              <template v-for="xp in experience.values">
+                <div v-if="xp.category === category" class="ma-3">
+                  <div class="subtitle-1">
+                    {{ xp.exp }}
+                  </div>
+                  <div class="caption font-weight-bold" style="color: gray">
+                    {{ xp.date }}
+                  </div>
+                </div>
               </template>
             </template>
           </v-list>

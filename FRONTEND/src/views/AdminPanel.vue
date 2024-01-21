@@ -15,6 +15,8 @@
         :edition-type=editionFormType
     >
     </ActorEditionForm>
+    <CdaRedesDialog :show-dialog="showRedesDialog">
+    </CdaRedesDialog>
   </div>
 </template>
 <!--
@@ -29,20 +31,22 @@
 -->
 <script>
 import {EventBus} from "@/main";
-import {mixins} from "../mixins/mixins";
+import {mixins} from "@/mixins/mixins";
 import ActorGallery from "@/components/ActorGallery.vue";
 import AdminBar from "@/components/AdminBar.vue";
 import ActorEditDialog from "@/components/ActorEditDialog.vue";
 import ActorEditionForm from "@/components/ActorEditionForm.vue";
+import CdaRedesDialog from "@/components/CdaRedesDialog.vue";
 
 export default {
   name: "AdminPanel",
   mixins: [mixins],
-  components: { ActorEditDialog, AdminBar, ActorGallery, ActorEditionForm },
+  components: {CdaRedesDialog, ActorEditDialog, AdminBar, ActorGallery, ActorEditionForm },
   data: () => ({
     isAdmin: true,
     showEditOptionsDialog: false,
     showActorEditionDialog: false,
+    showRedesDialog: false,
     editionFormType: '',
     selectedActor: {
       id: '',
@@ -79,6 +83,9 @@ export default {
           EventBus.$emit('toActorGallery_reloadGallery')
         });
 
+    EventBus.$on('adminActions_showRedesDialog', () => {
+      this.showRedesDialog = !this.showRedesDialog;
+    });
   },
   methods: {
     async checkAdmin(){
@@ -96,7 +103,7 @@ export default {
             });
             this.$router.push(`/`);
           });
-    },
+    }
   }
 }
 </script>

@@ -15,6 +15,15 @@
         >
           Añadir Actor
         </v-btn>
+        <v-btn
+            class="ml-4"
+            tile
+            outlined
+            v-if=!newActorInput
+            @click="showRedesDialog"
+        >
+          Modificar Redes
+        </v-btn>
         <div
             v-if=newActorInput
             class="d-flex justify-center align-center"
@@ -86,6 +95,9 @@ export default {
           });
       this.actorName = '';
       this.newActorInput = false;
+    },
+    showRedesDialog() {
+      EventBus.$emit('adminActions_showRedesDialog');
     }
   }
 }

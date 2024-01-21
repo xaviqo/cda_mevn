@@ -23,6 +23,7 @@
                   :rules="[v => !!v || 'Es necesario indicar una contraseña']"
                   label="Contraseña"
                   @click:append="showPwd = !showPwd"
+                  @keyup.enter="connect"
                   required
               ></v-text-field>
               <div class="mt-2">

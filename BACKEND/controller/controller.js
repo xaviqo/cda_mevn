@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const actorService = require('../service/actor.service');
+const cdaService = require('../service/cda.service');
 const Actor = require('../models/Actor');
 const loginService = require('../service/login.service');
 const Admin = require('../models/Admin');
@@ -13,7 +14,11 @@ router.get('/admin/check',verifyToken,(req,res) =>
 );
 router.post('/create-admin', loginService.createAdmin);
 
+// CDA
+router.post('/cda/rrss',verifyToken,cdaService.modify);
+router.get('/cda/rrss',cdaService.get);
 
+// ACTOR
 router.get('/gallery', actorService.gallery);
 router.post('/new',verifyToken,actorService.create);
 router.delete('/delete/:id',verifyToken,actorService.delete);
@@ -29,6 +34,5 @@ router.get('/social/retrieve/:id',verifyToken,actorService.retrieveSocial);
 router.get('/images/retrieve/:id',verifyToken, actorService.retrieveImages);
 router.get('/videos/retrieve/:id',verifyToken, actorService.retrieveVideos);
 router.get('/video/retrieve/:idVideo', actorService.retrieveVideo);
-
 router.get('/full-profile/retrieve/:name',actorService.retrieveFullProfile);
 module.exports = router;

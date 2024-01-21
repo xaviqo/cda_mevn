@@ -77,7 +77,7 @@ export default {
   methods: {
     getGallery(){
       this.axios
-          .get(`/gallery`)
+          .get(`/gallery${this.admin ? '?all=true' : '' }`)
           .then( res => {
             this.actors = res.data;
             this.actors.forEach( a => {

@@ -30,7 +30,7 @@
       <v-tab
           v-for="(item,i) in tabsArray"
           :key="i"
-          @click=goTo(item.bgUrl)
+          @click="() => goTo(item.bgUrl)"
           fixed-tabs
       >
         {{ item.bgName }}

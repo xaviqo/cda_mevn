@@ -340,26 +340,35 @@ actorService.changeStatus = async (req,res) => {
 
 actorService.gallery = async (req, res) => {
     try {
-        //filtrar para que solo envie foto que es main
-        const actors = await Actor.find()
-                .select({
+        let actorsQuery = Actor.find()
+            .select({
                 'name': 1,
                 'photos': 1,
                 'active': 1
             });
+
+        if (!req.query.all) {
+            actorsQuery = actorsQuery.where('active').equals(true);
+        }
+
+        // Ejecutar la consulta aquí antes de aplicar el mapeo
+        const actors = await actorsQuery.exec();
+
+        // Filtrar para que solo envíe fotos que son principales
         const filteredActors = actors.map(actor => {
             const filteredPhotos = actor.photos.filter(photo => photo.main);
             return {
                 _id: actor._id,
                 active: actor.active,
                 name: actor.name,
-                photo: filteredPhotos[0]?filteredPhotos[0]:{
-                    publicId:Date.now().toString(),
+                photo: filteredPhotos[0] ? filteredPhotos[0] : {
+                    publicId: Date.now().toString(),
                     secureUrl: null,
                     url: null
-                }
-            }
+                },
+            };
         });
+
         res.status(200).json(filteredActors);
 
     } catch (error) {
@@ -370,7 +379,8 @@ actorService.gallery = async (req, res) => {
             dateTime: new Date()
         });
     }
-}
+};
+
 
 function sortByDate(a,b) {
     return parseInt(b.date) - parseInt(a.date);
